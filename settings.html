@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings</title>
+  <link type="text/css" rel="stylesheet" href="../assessment-common/settings.css">
+  <link rel="stylesheet" href="./settings.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/cash/8.1.5/cash.min.js"></script>
+  <script type="text/javascript" src="../assessment-common/helper.js"></script>
+  <script type="text/javascript" src="./settings.js"></script>
+</head>
+<body>
+<div id="settings-content" class="codio-assessment-settings-content">
+  <div class="codio-assessment-settings-form-control codio-assessment-settings-form-input-container">
+    <label for="instructions" class="codio-assessment-settings-form-label">Instructions</label>
+    <textarea id="instructions" name="instructions" rows="4" class="codio-assessment-settings-form-input"></textarea>
+  </div>
+  <div class="codio-assessment-settings-form-control codio-assessment-settings-form-select-container">
+    <label for="previewType" class="codio-assessment-settings-form-label">Preview type</label>
+    <div class="codio-assessment-settings-form-select-wrapper">
+      <select id="previewType" class="codio-assessment-settings-form-select">
+        <option value="NONE">Plain text (no preview)</option>
+        <option value="RAW">Plain text + Latex</option>
+        <option value="MARKDOWN">Markdown + Latex</option>
+      </select>
+    </div>
+  </div>
+  <div class="codio-assessment-settings-form-control codio-assessment-settings-form-input-container">
+    <label for="command" class="codio-assessment-settings-form-label">Command</label>
+    <input id="command" name="command" class="codio-assessment-settings-form-input" type="text"/>
+  </div>
+  <div class="codio-assessment-settings-form-control codio-assessment-settings-form-input-container">
+    <label for="timeout" class="codio-assessment-settings-form-label">Timeout</label>
+    <input id="timeout" name="timeout" class="codio-assessment-settings-form-input" type="number"/>
+  </div>
+</div>
+</body>
+</html>
