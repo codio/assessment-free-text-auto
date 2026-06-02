@@ -11,11 +11,13 @@
 </head>
 <body>
 <div id="settings-content" class="codio-assessment-settings-content">
-  <div class="codio-assessment-settings-form-control codio-assessment-settings-form-input-container">
+  <div class="codio-assessment-settings-form-control">
     <label for="instructions" class="codio-assessment-settings-form-label">Instructions</label>
-    <textarea id="instructions" name="instructions" rows="4" class="codio-assessment-settings-form-input"></textarea>
+    <div class="codio-assessment-settings-form-input-container">
+      <textarea id="instructions" name="instructions" rows="4" class="codio-assessment-settings-form-input"></textarea>
+    </div>
   </div>
-  <div class="codio-assessment-settings-form-control codio-assessment-settings-form-select-container">
+  <div class="codio-assessment-settings-form-control">
     <label for="previewType" class="codio-assessment-settings-form-label">Preview type</label>
     <div class="codio-assessment-settings-form-select-wrapper">
       <select id="previewType" class="codio-assessment-settings-form-select">
@@ -25,13 +27,17 @@
       </select>
     </div>
   </div>
-  <div class="codio-assessment-settings-form-control codio-assessment-settings-form-input-container">
+  <div class="codio-assessment-settings-form-control">
     <label for="command" class="codio-assessment-settings-form-label">Command</label>
-    <input id="command" name="command" class="codio-assessment-settings-form-input" type="text"/>
+    <div class="codio-assessment-settings-form-input-container">
+      <input id="command" name="command" class="codio-assessment-settings-form-input" type="text"/>
+    </div>
   </div>
-  <div class="codio-assessment-settings-form-control codio-assessment-settings-form-input-container">
+  <div class="codio-assessment-settings-form-control">
     <label for="timeout" class="codio-assessment-settings-form-label">Timeout</label>
-    <input id="timeout" name="timeout" class="codio-assessment-settings-form-input" type="number"/>
+    <div class="codio-assessment-settings-form-input-container">
+      <input id="timeout" name="timeout" class="codio-assessment-settings-form-input" type="number"/>
+    </div>
   </div>
 </div>
 </body>
