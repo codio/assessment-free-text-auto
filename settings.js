@@ -1,9 +1,10 @@
 (function () {
   const DEFAULT_TIMEOUT = 40
+  let instructionsEditor = null
 
   const collectSettings = () => {
     const errors = []
-    const instructions = $('#instructions').val()
+    const instructions = instructionsEditor.getContent()
     const previewType = $('#previewType').val()
     const command = $('#command').val();
     const timeout = parseInt($('#timeout').val(), 10);
@@ -23,7 +24,7 @@
   }
 
   const applySettings = (settings = {}) => {
-    $('#instructions').val(settings.instructions || '');
+    instructionsEditor.setContent(settings.instructions || '')
     $('#previewType').val(settings.previewType || 'NONE')
     $('#command').val(settings.command || '');
     $('#timeout').val(settings.timeout || DEFAULT_TIMEOUT);
@@ -47,6 +48,7 @@
   const onLoad = async () => {
     window.codioAssessmentsHelper.registerMessageListener(processMessage)
     window.codioAssessmentsHelper.send(window.codioAssessmentsHelper.METHODS.GET_SETTINGS)
+    instructionsEditor = window.codioAssessmentsHelper.initializeMarkdownEditor('instructions', 'instructions-command-bar')
   }
 
   window.addEventListener('load', onLoad);
