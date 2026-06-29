@@ -1,0 +1,15 @@
+{
+  "name": "Free Text Auto",
+  "type": "assessment",
+  "properties": {
+    "type": "free-text-auto",
+    "icon": "./icon.svg",
+    "gradingControls": {
+      "points": true,
+      "allowPartialPoints": true,
+      "useMaximumScore": true,
+      "definedNumberOfAttempts": true,
+      "rationale": true
+    }
+  }
+}

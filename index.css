@@ -1,0 +1,9 @@
+.codio-assessment-textarea {
+  width: 100%;
+}
+
+.codio-assessment-teacher-comment-block {
+  border-radius: 2px;
+  border: 1px solid #d3d5dc;
+  padding: 3px;
+}
